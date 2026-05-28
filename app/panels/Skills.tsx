@@ -1,19 +1,19 @@
 const skillGroups = [
   {
+    category: 'Languages',
+    skills: ['Java', 'Kotlin', 'Python', 'JavaScript', 'TypeScript'],
+  },
+  {
     category: 'Backend',
-    skills: ['Go', 'Python', 'Node.js', 'REST APIs', 'GraphQL', 'gRPC'],
+    skills: ['Spring Boot', 'PostgreSQL', 'Linux', 'Docker', 'GCP'],
   },
   {
     category: 'Frontend',
-    skills: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'HTML / CSS'],
+    skills: ['React', 'Next.js', 'Tailwind CSS', 'Angular'],
   },
   {
-    category: 'Data & Storage',
-    skills: ['PostgreSQL', 'MySQL', 'Redis', 'Kafka', 'Elasticsearch'],
-  },
-  {
-    category: 'Infrastructure',
-    skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Terraform', 'Linux'],
+    category: 'Messaging / Infrastructure',
+    skills: ['Kafka', 'Solace PubSub+'],
   },
 ]
 

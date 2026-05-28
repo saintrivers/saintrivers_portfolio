@@ -6,7 +6,7 @@ export default function Hero() {
             </p>
 
             <h1 className="text-6xl font-bold tracking-tight text-white drop-shadow-lg sm:text-8xl">
-                Dayan EAM
+                Dayan Eam
             </h1>
 
             <h2 className="mt-4 text-xl font-medium text-white/70 sm:text-2xl">

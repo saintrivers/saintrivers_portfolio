@@ -1,21 +1,21 @@
 const projects = [
   {
-    name: 'Project Alpha',
-    description: 'A high-throughput data pipeline handling millions of events per day. Built with reliability and observability in mind.',
-    tags: ['Go', 'Kafka', 'PostgreSQL'],
-    href: '#',
+    name: 'Product Showcase Homepage',
+    description: 'Independently developed and deployed a showcase platform for a medical aesthetics company in Pangyo.',
+    tags: ['Next.js', 'Spring Boot', 'PostgreSQL', 'Docker'],
+    href: 'https://www.iregenbogen.com',
   },
   {
-    name: 'Project Beta',
-    description: 'Full-stack SaaS platform with real-time collaboration features and a clean, responsive interface.',
-    tags: ['Next.js', 'TypeScript', 'Supabase'],
-    href: '#',
+    name: 'Kafka-based Messaging Application ',
+    description: 'Built asynchronous and distributed messaging application using event-driven architecture and containerized deployment for training purposes in Korea Software HRD Center.',
+    tags: ['JMeter', 'Spring Boot', 'Kafka', 'Docker'],
+    href: 'https://github.com/saintrivers/kafka_messaging_app',
   },
   {
-    name: 'Project Gamma',
-    description: 'Internal tooling that cut deployment time by 60% and gave the team visibility into production health.',
-    tags: ['Python', 'Docker', 'Grafana'],
-    href: '#',
+    name: 'Content Management Application',
+    description: 'Developed REST API with database integration for students/trainees to model and replicate.',
+    tags: ['Kotlin', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL'],
+    href: 'https://github.com/saintrivers/kotlin_springboot_ams',
   },
 ]
 
