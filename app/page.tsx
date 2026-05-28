@@ -1,29 +1,25 @@
 import DotNav from './components/DotNav'
+import Hero from './panels/Hero'
+import About from './panels/About'
+import Work from './panels/Work'
+import Skills from './panels/Skills'
+import Contact from './panels/Contact'
 
 const sections = [
-  { id: 'home',    label: 'Home',    description: 'Welcome to my portfolio' },
-  { id: 'about',   label: 'About',   description: 'A little about me' },
-  { id: 'work',    label: 'Work',    description: "Projects I've built" },
-  { id: 'skills',  label: 'Skills',  description: 'What I work with' },
-  { id: 'contact', label: 'Contact', description: 'Get in touch' },
+  { id: 'hero',    panel: <Hero /> },
+  { id: 'about',   panel: <About /> },
+  { id: 'work',    panel: <Work /> },
+  { id: 'skills',  panel: <Skills /> },
+  { id: 'contact', panel: <Contact /> },
 ]
 
 export default function Home() {
   return (
     <>
       <DotNav />
-      {sections.map(({ id, label, description }) => (
-        <section
-          key={id}
-          id={id}
-          className="min-h-screen flex flex-col items-center justify-center"
-        >
-          <h2 className="text-5xl font-bold tracking-tight text-white drop-shadow-lg">
-            {label}
-          </h2>
-          <p className="mt-4 text-lg text-white/60">
-            {description}
-          </p>
+      {sections.map(({ id, panel }) => (
+        <section key={id} id={id} className="min-h-screen">
+          {panel}
         </section>
       ))}
     </>

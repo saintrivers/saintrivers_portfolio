@@ -48,10 +48,10 @@ function EnvelopeIcon({ className }: { className?: string }) {
 }
 
 const NAV_ITEMS = [
-  { id: 'home',    label: 'Home',    Icon: HomeIcon },
-  { id: 'about',   label: 'About',   Icon: UserIcon },
-  { id: 'work',    label: 'Work',    Icon: BriefcaseIcon },
-  { id: 'skills',  label: 'Skills',  Icon: StarIcon },
+  { id: 'hero', label: 'Hero', Icon: HomeIcon },
+  { id: 'about', label: 'About', Icon: UserIcon },
+  { id: 'work', label: 'Work', Icon: BriefcaseIcon },
+  { id: 'skills', label: 'Skills', Icon: StarIcon },
   { id: 'contact', label: 'Contact', Icon: EnvelopeIcon },
 ] as const
 
