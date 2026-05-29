@@ -1,15 +1,13 @@
 import DotNav from './components/DotNav'
 import Hero from './panels/Hero'
-import About from './panels/About'
 import Work from './panels/Work'
 import Skills from './panels/Skills'
 import Contact from './panels/Contact'
 
 const sections = [
-  { id: 'hero',    panel: <Hero /> },
-  { id: 'about',   panel: <About /> },
-  { id: 'work',    panel: <Work /> },
-  { id: 'skills',  panel: <Skills /> },
+  { id: 'hero', panel: <Hero /> },
+  { id: 'skills', panel: <Skills /> },
+  { id: 'work', panel: <Work /> },
   { id: 'contact', panel: <Contact /> },
 ]
 

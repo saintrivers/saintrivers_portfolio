@@ -1,7 +1,36 @@
+import Image from 'next/image'
+
 const links = [
   { label: 'GitHub', href: 'https://github.com/saintrivers', display: 'github.com/saintrivers' },
   { label: 'Email', href: 'mailto:eam.dayan@gmail.com', display: 'eam.dayan@gmail.com' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/dayan-eam-5249b93b1', display: 'linkedin.com/in/dayan-eam-5249b93b1' },
+]
+
+const institutions = [
+  {
+    src: '/logos/rupp_logo.png',
+    alt: 'Royal University of Phnom Penh',
+    name: 'Royal University of Phnom Penh',
+    degree: 'B.S. in Computer Science and Engineering',
+    link: 'https://www.rupp.edu.kh/',
+    container: 'h-12 w-12 rounded-full',
+  },
+  {
+    src: '/logos/kshrd_logo.png',
+    alt: 'Korea Software HRD Center',
+    name: 'Korea Software HRD Center',
+    degree: 'Blockchain Engineering and Microservice Architecture',
+    link: 'https://www.kshrd.com.kh/',
+    container: 'h-12 w-12 rounded-full',
+  },
+  {
+    src: '/logos/ajou_logo.png',
+    alt: 'Ajou University',
+    name: 'Ajou University',
+    degree: 'M.S. in Computer Engineering and Security',
+    link: 'https://www.ajou.ac.kr/en/index.do',
+    container: 'h-12 w-12 rounded-full bg-white/90',
+  },
 ]
 
 export default function Contact() {
@@ -23,7 +52,7 @@ export default function Contact() {
         href="mailto:eam.dayan@gmail.com"
         className="mt-10 inline-block rounded-full bg-white px-8 py-4 text-sm font-semibold tracking-wide text-zinc-900 transition-colors hover:bg-white/90"
       >
-        Say hello →
+        Email Me →
       </a>
 
       <div className="mt-16 flex flex-col items-center gap-4">
@@ -40,6 +69,36 @@ export default function Contact() {
             <span>{display}</span>
           </a>
         ))}
+      </div>
+
+      <div className="mt-12 w-full max-w-2xl border-t border-white/10 pt-6">
+        <p className="mb-8 text-xs font-semibold tracking-[0.2em] uppercase text-white/25">
+          Education &amp; Training
+        </p>
+
+        <div className="flex flex-wrap items-start justify-center gap-10">
+          {institutions.map(({ src, alt, name, degree, link, container }) => (
+            <a
+              key={name}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center gap-2 w-36 transition-opacity hover:opacity-100 opacity-80"
+            >
+              <div className={`relative backdrop-blur-sm ${container}`}>
+                <Image src={src} alt={alt} fill className="object-contain" />
+              </div>
+              <p className="text-xs text-white font-medium leading-snug h-8">{name}</p>
+              <p className="text-xs text-white/60 leading-snug">{degree}</p>
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-10 flex items-center justify-center gap-3 text-xs text-white/70">
+          <span>TOPIK Level 3</span>
+          <span className="w-px h-3 bg-white/40" />
+          <span>Cambridge English C1</span>
+        </div>
       </div>
     </div>
   )

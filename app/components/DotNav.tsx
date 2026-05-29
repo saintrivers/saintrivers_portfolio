@@ -48,15 +48,14 @@ function EnvelopeIcon({ className }: { className?: string }) {
 }
 
 const NAV_ITEMS = [
-  { id: 'hero', label: 'Hero', Icon: HomeIcon },
-  { id: 'about', label: 'About', Icon: UserIcon },
-  { id: 'work', label: 'Work', Icon: BriefcaseIcon },
-  { id: 'skills', label: 'Skills', Icon: StarIcon },
+  { id: 'hero',    label: 'Home',    Icon: HomeIcon },
+  { id: 'work',    label: 'Work',    Icon: BriefcaseIcon },
+  { id: 'skills',  label: 'Skills',  Icon: StarIcon },
   { id: 'contact', label: 'Contact', Icon: EnvelopeIcon },
 ] as const
 
 export default function DotNav() {
-  const [active, setActive] = useState<string>('home')
+  const [active, setActive] = useState<string>('hero')
 
   useEffect(() => {
     const observers = NAV_ITEMS.map(({ id }) => {
