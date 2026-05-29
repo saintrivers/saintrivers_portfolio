@@ -1,10 +1,12 @@
-export default function About() {
-  const highlights = [
-    { label: 'Years of experience', value: '5+' },
-    { label: 'Projects shipped', value: '30+' },
-    { label: 'Countries worked from', value: '3' },
-  ]
+import Image from 'next/image'
 
+const institutions = [
+  { src: '/logos/rupp_logo.png', alt: 'Royal University of Phnom Penh', name: 'Royal University of Phnom Penh', link: 'https://www.rupp.edu.kh/', container: 'h-16 w-16 rounded-full' },
+  { src: '/logos/kshrd_logo.png', alt: 'Korea Software HRD Center', name: 'Korea Software HRD Center', link: 'https://www.kshrd.com.kh/', container: 'h-16 w-16 rounded-full' },
+  { src: '/logos/ajou_logo.png', alt: 'Ajou University', name: 'Ajou University', link: 'https://www.ajou.ac.kr/en/index.do', container: 'h-16 w-16 rounded-full bg-white/90' },
+]
+
+export default function About() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-8 py-24">
       <p className="mb-4 text-sm font-semibold tracking-[0.25em] uppercase text-white/50">
@@ -16,22 +18,30 @@ export default function About() {
       </h2>
 
       <p className="mt-8 max-w-2xl text-center text-base leading-relaxed text-white/60 sm:text-lg">
-        I'm Dayan, a backend and full-stack engineer passionate about building
-        systems that scale and interfaces that don't get in the way. I care
-        about clean code, good architecture, and shipping things that matter.
+        I'm mainly focused on backend and infrastructure, but I can readily step into full-stack roles when needed. I also possess expertise in machine learning for applications like recommendation systems, text processing, and radar signal processing.
       </p>
 
       <p className="mt-4 max-w-2xl text-center text-base leading-relaxed text-white/60 sm:text-lg">
-        When I'm not writing code, I'm probably reading about distributed systems,
-        exploring new tools, or figuring out how things work under the hood.
+        When I'm not writing code, I like to step away from the screen to train in taekwondo, play billiards, or play table tennis.
       </p>
 
-      <div className="mt-16 grid grid-cols-3 gap-12 text-center">
-        {highlights.map(({ label, value }) => (
-          <div key={label}>
-            <p className="text-4xl font-bold text-white">{value}</p>
-            <p className="mt-2 text-sm text-white/50">{label}</p>
-          </div>
+      <p className="mt-16 text-xs font-semibold tracking-[0.2em] uppercase text-white/30 text-center">
+        Education &amp; Training
+      </p>
+
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-12">
+        {institutions.map(({ src, alt, name, container, link }) => (
+          <a target="_blank" href={link} key={name} className="flex flex-col items-center gap-3 w-24">
+            <div className={`relative backdrop-blur-sm ${container}`}>
+              <Image
+                src={src}
+                alt={alt}
+                fill
+                className="object-contain"
+              />
+            </div>
+            <p className="text-xs text-white/45 text-center max-w-32 h-8">{name}</p>
+          </a>
         ))}
       </div>
     </div>

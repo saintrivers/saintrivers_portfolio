@@ -14,8 +14,7 @@ export default function Hero() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/50">
-                I build thoughtful digital products — clean interfaces, solid architecture,
-                and experiences people actually enjoy using.
+                Building robust backend systems and scalable infrastructure, with the flexibility for full-stack development and complex data processing.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
