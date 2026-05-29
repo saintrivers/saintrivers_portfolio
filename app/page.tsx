@@ -4,13 +4,15 @@ import Hero from './panels/Hero'
 import Work from './panels/Work'
 import Skills from './panels/Skills'
 import Contact from './panels/Contact'
+import Research from './panels/Research'
 import { sections, type SectionId } from './content'
 
 const panels: Record<SectionId, ReactNode> = {
-  hero:    <Hero />,
-  skills:  <Skills />,
-  work:    <Work />,
-  contact: <Contact />,
+  hero:     <Hero />,
+  skills:   <Skills />,
+  work:     <Work />,
+  research: <Research />,
+  contact:  <Contact />,
 }
 
 export default function Home() {

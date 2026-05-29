@@ -30,9 +30,9 @@ export default function Contact() {
             href={href}
             target={href.startsWith('http') ? '_blank' : undefined}
             rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-            className="flex items-center gap-3 text-sm text-white/40 transition-colors hover:text-white"
+            className="flex w-full items-center gap-3 text-sm text-white/40 transition-colors hover:text-white"
           >
-            <span className="w-14 text-right text-white/25">{label}</span>
+            <span className="w-36 text-right text-white/25">{label}</span>
             <span className="w-px h-3 bg-white/15" />
             <span>{display}</span>
           </a>

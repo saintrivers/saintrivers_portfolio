@@ -4,6 +4,7 @@ export const sections = [
   { id: 'hero', label: 'Home' },
   { id: 'skills', label: 'Tech Stack' },
   { id: 'work', label: 'Projects' },
+  { id: 'research', label: 'Research' },
   { id: 'contact', label: 'Contact' },
 ] as const
 
@@ -56,6 +57,7 @@ export const aboutInstitutions = [
 export const contactLinks = [
   { label: 'GitHub', href: 'https://github.com/saintrivers', display: 'github.com/saintrivers' },
   { label: 'Email', href: 'mailto:eam.dayan@gmail.com', display: 'eam.dayan@gmail.com' },
+  { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=iYF2_SwAAAAJ', display: 'scholar.google.com/citations?user=iYF2_SwAAAAJ' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/dayan-eam-5249b93b1', display: 'linkedin.com/in/dayan-eam-5249b93b1' },
 ]
 
@@ -95,6 +97,36 @@ export const skillGroups = [
   { category: 'Infrastructure', skills: ['Linux', 'Docker', 'API Gateway', 'Service Discovery'] },
   { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
   { category: 'ML / Data', skills: ['TensorFlow', 'scikit-learn'] },
+]
+
+// ---- Research ----
+
+export type PublicationStatus = 'published' | 'in-preparation'
+
+export type Publication = {
+  title: string
+  lab: string
+  labLink: string
+  venue?: string
+  doi?: string
+  status: PublicationStatus
+}
+
+export const publications: Publication[] = [
+  {
+    title: 'A Deep Learning Approach for Affect Detection: Does Biometric Data Improve Fairness?',
+    lab: 'AiCONS Lab, Ajou University',
+    labLink: 'https://sites.google.com/view/iconslab/home',
+    venue: 'IEEE SmartNets2025 — Istanbul, Turkey',
+    doi: '10.1109/SmartNets65254.2025.11106887',
+    status: 'published',
+  },
+  {
+    title: 'Geometry-Guided Multipath IR-UWB Sensing for In-Cabin Localization and Respiration Monitoring',
+    lab: 'AiCONS Lab, Ajou University',
+    labLink: 'https://sites.google.com/view/iconslab/home',
+    status: 'in-preparation',
+  },
 ]
 
 // ---- Work ----
