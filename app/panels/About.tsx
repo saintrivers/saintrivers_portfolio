@@ -44,6 +44,12 @@ export default function About() {
           </a>
         ))}
       </div>
+
+      <div className="mt-10 flex items-center gap-3 text-xs text-white/30">
+        <span>TOPIK Level 3</span>
+        <span className="w-px h-3 bg-white/15" />
+        <span>Cambridge English C1</span>
+      </div>
     </div>
   )
 }

@@ -14,7 +14,10 @@ export default function Hero() {
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/50">
-                Building robust backend systems and scalable infrastructure, with the flexibility for full-stack development and complex data processing.
+                Software Engineer focused on backend systems, distributed architectures, and modern web applications.
+            </p>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90">
+                Spring Boot • Kotlin/Java • React • PostgreSQL • Docker • Microservices
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

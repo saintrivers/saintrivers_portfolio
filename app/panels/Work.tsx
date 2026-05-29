@@ -1,7 +1,7 @@
 const projects = [
   {
     name: 'Product Showcase Homepage',
-    description: 'Independently developed and deployed a showcase platform for a medical aesthetics company in Pangyo.',
+    description: 'Independently developed and deployed a showcase platform for a medical aesthetics client in Pangyo, South Korea.',
     tags: ['Next.js', 'Spring Boot', 'PostgreSQL', 'Docker'],
     href: 'https://www.iregenbogen.com',
   },
