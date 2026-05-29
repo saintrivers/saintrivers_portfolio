@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { type ReactElement, useEffect, useState } from 'react'
+import { sections, type SectionId } from '../content'
 
 function HomeIcon({ className }: { className?: string }) {
   return (
@@ -47,18 +48,18 @@ function EnvelopeIcon({ className }: { className?: string }) {
   )
 }
 
-const NAV_ITEMS = [
-  { id: 'hero',    label: 'Home',    Icon: HomeIcon },
-  { id: 'work',    label: 'Work',    Icon: BriefcaseIcon },
-  { id: 'skills',  label: 'Skills',  Icon: StarIcon },
-  { id: 'contact', label: 'Contact', Icon: EnvelopeIcon },
-] as const
+const icons: Record<SectionId, (props: { className?: string }) => ReactElement> = {
+  hero:    HomeIcon,
+  skills:  StarIcon,
+  work:    BriefcaseIcon,
+  contact: EnvelopeIcon,
+}
 
 export default function DotNav() {
   const [active, setActive] = useState<string>('hero')
 
   useEffect(() => {
-    const observers = NAV_ITEMS.map(({ id }) => {
+    const observers = sections.map(({ id }) => {
       const el = document.getElementById(id)
       if (!el) return null
       const observer = new IntersectionObserver(
@@ -77,8 +78,9 @@ export default function DotNav() {
 
   return (
     <nav className="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-5">
-      {NAV_ITEMS.map(({ id, label, Icon }) => {
+      {sections.map(({ id, label }) => {
         const isActive = active === id
+        const Icon = icons[id]
         return (
           <button
             key={id}

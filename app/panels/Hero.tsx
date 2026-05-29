@@ -1,3 +1,5 @@
+import { hero, contactLinks } from '../content'
+
 export default function Hero() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center px-8 text-center">
@@ -6,18 +8,18 @@ export default function Hero() {
             </p>
 
             <h1 className="text-6xl font-bold tracking-tight text-white drop-shadow-lg sm:text-8xl">
-                Dayan Eam
+                {hero.name}
             </h1>
 
             <h2 className="mt-4 text-xl font-medium text-white/70 sm:text-2xl">
-                Backend &amp; Full-Stack Engineer
+                {hero.title}
             </h2>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/50">
-                Software Engineer focused on backend systems, distributed architectures, and modern web applications.
+                {hero.bio}
             </p>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/90">
-                Spring Boot • Kotlin/Java • React • PostgreSQL • Docker • Microservices
+                {hero.stack}
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -36,17 +38,22 @@ export default function Hero() {
             </div>
 
             <div className="mt-16 flex items-center gap-6 text-white/40">
-                <a href="https://github.com/saintrivers" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                    GitHub
-                </a>
-                <span className="w-px h-4 bg-white/20" />
-                <a href="https://linkedin.com/in/dayan-eam-5249b93b1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                    LinkedIn
-                </a>
-                <span className="w-px h-4 bg-white/20" />
-                <a href="mailto:eam.dayan@gmail.com" className="hover:text-white transition-colors">
-                    Email
-                </a>
+                {contactLinks.flatMap(({ label, href }, i) => {
+                    const link = (
+                        <a
+                            key={label}
+                            href={href}
+                            target={href.startsWith('http') ? '_blank' : undefined}
+                            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                            className="hover:text-white transition-colors"
+                        >
+                            {label}
+                        </a>
+                    )
+                    return i === 0
+                        ? [link]
+                        : [<span key={`sep-${i}`} className="w-px h-4 bg-white/20" />, link]
+                })}
             </div>
         </div>
     )

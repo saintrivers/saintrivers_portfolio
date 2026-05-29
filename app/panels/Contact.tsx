@@ -1,37 +1,5 @@
 import Image from 'next/image'
-
-const links = [
-  { label: 'GitHub', href: 'https://github.com/saintrivers', display: 'github.com/saintrivers' },
-  { label: 'Email', href: 'mailto:eam.dayan@gmail.com', display: 'eam.dayan@gmail.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/dayan-eam-5249b93b1', display: 'linkedin.com/in/dayan-eam-5249b93b1' },
-]
-
-const institutions = [
-  {
-    src: '/logos/rupp_logo.png',
-    alt: 'Royal University of Phnom Penh',
-    name: 'Royal University of Phnom Penh',
-    degree: 'B.S. in Computer Science and Engineering',
-    link: 'https://www.rupp.edu.kh/',
-    container: 'h-12 w-12 rounded-full',
-  },
-  {
-    src: '/logos/kshrd_logo.png',
-    alt: 'Korea Software HRD Center',
-    name: 'Korea Software HRD Center',
-    degree: 'Blockchain Engineering and Microservice Architecture',
-    link: 'https://www.kshrd.com.kh/',
-    container: 'h-12 w-12 rounded-full',
-  },
-  {
-    src: '/logos/ajou_logo.png',
-    alt: 'Ajou University',
-    name: 'Ajou University',
-    degree: 'M.S. in Computer Engineering and Security',
-    link: 'https://www.ajou.ac.kr/en/index.do',
-    container: 'h-12 w-12 rounded-full bg-white/90',
-  },
-]
+import { contactLinks, contactInstitutions } from '../content'
 
 export default function Contact() {
   return (
@@ -56,7 +24,7 @@ export default function Contact() {
       </a>
 
       <div className="mt-16 flex flex-col items-center gap-4">
-        {links.map(({ label, href, display }) => (
+        {contactLinks.map(({ label, href, display }) => (
           <a
             key={label}
             href={href}
@@ -77,7 +45,7 @@ export default function Contact() {
         </p>
 
         <div className="flex flex-wrap items-start justify-center gap-10">
-          {institutions.map(({ src, alt, name, degree, link, container }) => (
+          {contactInstitutions.map(({ src, alt, name, degree, link, container }) => (
             <a
               key={name}
               href={link}
@@ -86,7 +54,8 @@ export default function Contact() {
               className="group flex flex-col items-center gap-2 w-36 transition-opacity hover:opacity-100 opacity-80"
             >
               <div className={`relative backdrop-blur-sm ${container}`}>
-                <Image src={src} alt={alt} fill className="object-contain" />
+                <Image
+                  src={src} alt={alt} fill sizes="64px" className="object-contain" />
               </div>
               <p className="text-xs text-white font-medium leading-snug h-8">{name}</p>
               <p className="text-xs text-white/60 leading-snug">{degree}</p>
@@ -95,9 +64,11 @@ export default function Contact() {
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-3 text-xs text-white/70">
+          <span>Khmer Native</span>
+          <span className="w-px h-3 bg-white/40" />
           <span>TOPIK Level 3</span>
           <span className="w-px h-3 bg-white/40" />
-          <span>Cambridge English C1</span>
+          <span>Cambridge English <strong>C1</strong></span>
         </div>
       </div>
     </div>

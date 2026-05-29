@@ -1,29 +1,4 @@
-const skillGroups = [
-  {
-    category: 'Languages',
-    skills: ['Java', 'Kotlin', 'Python', 'TypeScript'],
-  },
-  {
-    category: 'Backend',
-    skills: ['Spring Boot', 'OAuth2', 'PostgreSQL', 'Reactive Systems'],
-  },
-  {
-    category: 'Distributed Systems & Messaging',
-    skills: ['Microservices', 'Apache Kafka', 'Solace PubSub+'],
-  },
-  {
-    category: 'Infrastructure',
-    skills: ['Linux', 'Docker', 'API Gateway', 'Service Discovery'],
-  },
-  {
-    category: 'Frontend',
-    skills: ['React', 'Next.js', 'Angular'],
-  },
-  {
-    category: 'ML / Data',
-    skills: ['TensowFlow', 'NumPy', 'SciPy'],
-  },
-]
+import { skillGroups } from '../content'
 
 export default function Skills() {
   return (

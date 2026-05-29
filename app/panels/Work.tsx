@@ -1,55 +1,4 @@
-type ProjectType = 'client' | 'teaching' | 'class'
-
-const projects: {
-  name: string
-  description: string
-  tags: string[]
-  href: string
-  type: ProjectType
-}[] = [
-    {
-      name: 'Product Showcase Homepage',
-      description: 'Independently developed and deployed a showcase platform for a medical aesthetics client in Pangyo, South Korea.',
-      tags: ['Next.js', 'Spring Boot', 'PostgreSQL', 'Docker'],
-      href: 'https://www.iregenbogen.com',
-      type: 'client',
-    },
-    {
-      name: 'Kafka Full-Stack Template',
-      description: 'Reference architecture for event-driven applications — Angular frontend, Spring Boot services, Kafka messaging, fully containerized with Docker.',
-      tags: ['Angular', 'Spring Boot', 'Kafka', 'Docker'],
-      href: 'https://github.com/saintrivers/kafka_messaging_app',
-      type: 'teaching',
-    },
-    {
-      name: 'REST API with JWT Auth',
-      description: 'Full backend reference implementation with JWT authentication, PostgreSQL integration, and clean layered architecture for students to model and replicate.',
-      tags: ['Kotlin', 'Spring Boot', 'JWT', 'Spring Data JPA', 'PostgreSQL'],
-      href: 'https://github.com/saintrivers/kotlin_springboot_ams',
-      type: 'teaching',
-    },
-    {
-      name: 'Keycloak OAuth2 Deployment',
-      description: 'Full-stack deployment template demonstrating OAuth2/OIDC security with Keycloak — a reproducible reference for engineers learning auth infrastructure.',
-      tags: ['Keycloak', 'OAuth2', 'Spring Boot', 'Docker'],
-      href: 'https://github.com/saintrivers',
-      type: 'teaching',
-    },
-    {
-      name: 'KONG + Keycloak API Gateway',
-      description: 'API gateway integration template using KONG and Keycloak — covers service routing, and centralized auth enforcement across services.',
-      tags: ['KONG', 'Keycloak', 'Spring Boot', 'Docker'],
-      href: 'https://github.com/saintrivers',
-      type: 'teaching',
-    },
-    {
-      name: 'ML Recommendation System',
-      description: 'Compared item-based, content-based, and neural-collaborative-filtering movie recommendation systems.',
-      tags: ['Python', 'kNN', 'TensorFlow', 'Sklearn'],
-      href: 'https://github.com/saintrivers/movie_recommendation.git',
-      type: 'class',
-    },
-  ]
+import { projects } from '../content'
 
 const typeConfig = {
   client: {
@@ -84,7 +33,7 @@ export default function Work() {
       </h2>
 
       <p className="mt-6 max-w-xl text-center text-base text-white/50">
-        A selection of things I've built — production work and open teaching material.
+        A selection of things I've built as a student, instructor and freelancer.
       </p>
 
       <div className="mt-16 grid w-full max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">

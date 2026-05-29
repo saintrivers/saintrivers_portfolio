@@ -1,10 +1,5 @@
 import Image from 'next/image'
-
-const institutions = [
-  { src: '/logos/rupp_logo.png', alt: 'Royal University of Phnom Penh', name: 'Royal University of Phnom Penh', link: 'https://www.rupp.edu.kh/', container: 'h-16 w-16 rounded-full' },
-  { src: '/logos/kshrd_logo.png', alt: 'Korea Software HRD Center', name: 'Korea Software HRD Center', link: 'https://www.kshrd.com.kh/', container: 'h-16 w-16 rounded-full' },
-  { src: '/logos/ajou_logo.png', alt: 'Ajou University', name: 'Ajou University', link: 'https://www.ajou.ac.kr/en/index.do', container: 'h-16 w-16 rounded-full bg-white/90' },
-]
+import { about, aboutInstitutions } from '../content'
 
 export default function About() {
   return (
@@ -17,26 +12,25 @@ export default function About() {
         Who I am
       </h2>
 
-      <p className="mt-8 max-w-2xl text-center text-base leading-relaxed text-white/60 sm:text-lg">
-        I'm mainly focused on backend and infrastructure, but I can readily step into full-stack roles when needed. I also possess expertise in machine learning for applications like recommendation systems, text processing, and radar signal processing.
-      </p>
-
-      <p className="mt-4 max-w-2xl text-center text-base leading-relaxed text-white/60 sm:text-lg">
-        When I'm not writing code, I like to step away from the screen to train in taekwondo, play billiards, or play table tennis.
-      </p>
+      {about.bio.map((paragraph, i) => (
+        <p key={i} className="mt-8 max-w-2xl text-center text-base leading-relaxed text-white/60 sm:text-lg">
+          {paragraph}
+        </p>
+      ))}
 
       <p className="mt-16 text-xs font-semibold tracking-[0.2em] uppercase text-white/30 text-center">
         Education &amp; Training
       </p>
 
       <div className="mt-8 flex flex-wrap items-center justify-center gap-12">
-        {institutions.map(({ src, alt, name, container, link }) => (
+        {aboutInstitutions.map(({ src, alt, name, container, link }) => (
           <a target="_blank" href={link} key={name} className="flex flex-col items-center gap-3 w-24">
             <div className={`relative backdrop-blur-sm ${container}`}>
               <Image
                 src={src}
                 alt={alt}
                 fill
+                sizes="64px"
                 className="object-contain"
               />
             </div>
