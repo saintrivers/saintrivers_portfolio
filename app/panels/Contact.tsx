@@ -1,7 +1,7 @@
 const links = [
   { label: 'GitHub', href: 'https://github.com/saintrivers', display: 'github.com/saintrivers' },
-  { label: 'LinkedIn', href: 'https://linkedin.com', display: 'linkedin.com/in/yourhandle' },
   { label: 'Email', href: 'mailto:eam.dayan@gmail.com', display: 'eam.dayan@gmail.com' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/dayan-eam-5249b93b1', display: 'linkedin.com/in/dayan-eam-5249b93b1' },
 ]
 
 export default function Contact() {
@@ -16,8 +16,7 @@ export default function Contact() {
       </h2>
 
       <p className="mt-6 max-w-lg text-base leading-relaxed text-white/50">
-        Whether it's a project, an opportunity, or just a question — I'm happy
-        to hear from you. Drop me a message and I'll get back to you.
+        Whether it's a project, an opportunity, or just a question — drop me a message and I'll get back to you.
       </p>
 
       <a

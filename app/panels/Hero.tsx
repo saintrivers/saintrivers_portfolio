@@ -38,7 +38,7 @@ export default function Hero() {
                     GitHub
                 </a>
                 <span className="w-px h-4 bg-white/20" />
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <a href="https://linkedin.com/in/dayan-eam-5249b93b1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                     LinkedIn
                 </a>
                 <span className="w-px h-4 bg-white/20" />

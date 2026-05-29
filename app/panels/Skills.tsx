@@ -1,19 +1,27 @@
 const skillGroups = [
   {
     category: 'Languages',
-    skills: ['Java', 'Kotlin', 'Python', 'JavaScript', 'TypeScript'],
+    skills: ['Java', 'Kotlin', 'Python', 'TypeScript'],
   },
   {
     category: 'Backend',
-    skills: ['Spring Boot', 'PostgreSQL', 'Linux', 'Docker', 'GCP'],
+    skills: ['Spring Boot', 'OAuth2', 'PostgreSQL', 'Reactive Systems'],
+  },
+  {
+    category: 'Distributed Systems & Messaging',
+    skills: ['Microservices', 'Apache Kafka', 'Solace PubSub+'],
+  },
+  {
+    category: 'Infrastructure',
+    skills: ['Linux', 'Docker', 'API Gateway', 'Service Discovery'],
   },
   {
     category: 'Frontend',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'Angular'],
+    skills: ['React', 'Next.js', 'Angular'],
   },
   {
-    category: 'Messaging / Infrastructure',
-    skills: ['Kafka', 'Solace PubSub+'],
+    category: 'ML / Data',
+    skills: ['TensowFlow', 'NumPy', 'SciPy'],
   },
 ]
 
@@ -21,7 +29,7 @@ export default function Skills() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-8 py-24">
       <p className="mb-4 text-sm font-semibold tracking-[0.25em] uppercase text-white/50">
-        Skills
+        Tech Stack
       </p>
 
       <h2 className="text-5xl font-bold tracking-tight text-white drop-shadow-lg sm:text-6xl">
@@ -32,7 +40,7 @@ export default function Skills() {
         Tools and technologies I reach for day to day.
       </p>
 
-      <div className="mt-16 grid w-full max-w-3xl gap-10 sm:grid-cols-2">
+      <div className="mt-16 grid w-full max-w-3xl gap-10 sm:grid-cols-3">
         {skillGroups.map(({ category, skills }) => (
           <div key={category}>
             <h3 className="mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-white/40">
