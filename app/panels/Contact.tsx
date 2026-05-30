@@ -16,12 +16,20 @@ export default function Contact() {
         Whether it's a project, an opportunity, or just a question — drop me a message and I'll get back to you.
       </p>
 
-      <a
-        href="mailto:eam.dayan@gmail.com"
-        className="mt-10 inline-block rounded-full bg-white px-8 py-4 text-sm font-semibold tracking-wide text-zinc-900 transition-colors hover:bg-white/90"
-      >
-        Email Me →
-      </a>
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="mailto:eam.dayan@gmail.com"
+          className="inline-block rounded-full bg-white px-8 py-4 text-sm font-semibold tracking-wide text-zinc-900 transition-colors hover:bg-white/90"
+        >
+          Email Me →
+        </a>
+        <a
+          href="/cv"
+          className="inline-block rounded-full border border-white/30 px-8 py-4 text-sm font-semibold tracking-wide text-white transition-colors hover:border-white/60 hover:bg-white/5"
+        >
+          View CV
+        </a>
+      </div>
 
       <div className="mt-16 flex flex-col items-center gap-4">
         {contactLinks.map(({ label, href, display }) => (

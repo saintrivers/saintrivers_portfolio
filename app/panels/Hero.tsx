@@ -35,6 +35,12 @@ export default function Hero() {
                 >
                     Get in touch
                 </a>
+                <a
+                    href="/cv"
+                    className="px-6 py-3 rounded-full border border-white/30 text-white text-sm font-semibold tracking-wide hover:border-white/60 hover:bg-white/5 transition-colors"
+                >
+                    View CV
+                </a>
             </div>
 
             <div className="mt-16 flex items-center gap-6 text-white/40">
