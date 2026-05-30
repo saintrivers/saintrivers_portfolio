@@ -17,6 +17,8 @@ export const hero = {
   title: 'Backend / Full-Stack Engineer',
   bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and cloud-deployed services — comfortable shipping in fast-moving environments and fluent in LLM-based development tools as part of daily workflow.',
   stack: 'Kotlin • Spring Boot • Kafka • PostgreSQL • WebFlux • Docker',
+  phone: '+82 010 2439 8541',
+  location: 'Suwon, Gyeonggi, Republic of Korea',
 }
 
 // ---- About ----
@@ -88,14 +90,66 @@ export const contactInstitutions = [
   },
 ]
 
+// ---- Work Experience ----
+
+export type WorkExperience = {
+  title: string
+  company: string
+  location: string
+  period: string
+  bullets: string[]
+}
+
+export const workExperience: WorkExperience[] = [
+  {
+    title: 'Graduate Researcher',
+    company: 'AiCONS Lab, Ajou University',
+    location: 'Suwon, Republic of Korea',
+    period: '2024/9 - Present',
+    bullets: [
+      'Published paper at IEEE SmartNets2025 on affect detection fairness using biometric data.',
+      'Researched IR-UWB radar for in-cabin vital sign monitoring with deep learning signal processing.',
+    ],
+  },
+  {
+    title: 'Freelance Full-Stack Engineer',
+    company: 'REGENBOGEN Co., Ltd.',
+    location: 'Pangyo, Seongnam, Republic of Korea',
+    period: '2025/4 - 2025/12',
+    bullets: [
+      'Sole engineer on a full-stack product showcase and admin dashboard for a medical aesthetics client.',
+      'Owned end-to-end delivery: Spring Boot API, Next.js frontend, PostgreSQL, deployed via Docker Swarm on DigitalOcean.',
+    ],
+  },
+  {
+    title: 'IT Instructor',
+    company: 'Korea Software HRD Center',
+    location: 'Phnom Penh, Cambodia',
+    period: '2022/2 - 2023/8',
+    bullets: [
+      'Delivered backend training in Java, Spring Boot, Spring WebFlux, and r2dbc to trainees.',
+      'Maintained Linux servers, networking equipment, and on-premise lab infrastructure.',
+    ],
+  },
+  {
+    title: 'Tech Support Intern',
+    company: 'Cambo Technology (ISP) Co., Ltd.',
+    location: 'Phnom Penh, Cambodia',
+    period: '2021/1 - 2021/3',
+    bullets: [
+      'Assisted in deployment and maintenance of Linux servers and MikroTik networking infrastructure.',
+    ],
+  },
+]
+
 // ---- Skills ----
 
 export const skillGroups = [
-  { category: 'Languages',      skills: ['Kotlin', 'Java', 'Python', 'TypeScript'] },
-  { category: 'Backend',        skills: ['Spring Boot', 'WebFlux', 'r2dbc', 'Kafka', 'OAuth2', 'PostgreSQL'] },
+  { category: 'Languages', skills: ['Kotlin', 'Java', 'Python', 'TypeScript'] },
+  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'r2dbc', 'Kafka', 'OAuth2', 'PostgreSQL'] },
   { category: 'Infrastructure', skills: ['Docker', 'GCP', 'DigitalOcean', 'Linux', 'API Gateway'] },
-  { category: 'Frontend',       skills: ['React', 'Next.js', 'Angular'] },
-  { category: 'AI & Data',      skills: ['TensorFlow', 'Claude Code', 'ChatGPT', 'Gemini', ] },
+  { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
+  { category: 'AI & Data', skills: ['TensorFlow', 'Claude Code', 'ChatGPT', 'Gemini',] },
 ]
 
 // ---- Research ----
