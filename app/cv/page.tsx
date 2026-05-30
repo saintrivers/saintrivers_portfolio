@@ -73,7 +73,7 @@ export default function CVPage() {
             <section>
               <h2 className={H}>Education</h2>
               <div className="space-y-3">
-                {contactInstitutions.map(({ name, degree, link }) => (
+                {contactInstitutions.map(({ name, degree, period, link }) => (
                   <div key={name}>
                     <a
                       href={link}
@@ -84,23 +84,10 @@ export default function CVPage() {
                       {name}
                     </a>
                     <p className="text-[11px] text-zinc-500 leading-snug">{degree}</p>
+                    <p className="text-[10px] text-zinc-400">{period}</p>
                   </div>
                 ))}
               </div>
-            </section>
-
-            <section>
-              <h2 className={H}>Languages</h2>
-              <div className="space-y-1 text-[11px] text-zinc-500">
-                <p>Khmer — Native</p>
-                <p>Korean — TOPIK Level 3</p>
-                <p>English — Cambridge C1</p>
-              </div>
-            </section>
-
-            <section>
-              <h2 className={H}>Interests</h2>
-              <p className="text-[11px] text-zinc-500">Taekwondo · Billiards · Table tennis</p>
             </section>
 
             <section>
@@ -120,6 +107,20 @@ export default function CVPage() {
                   </div>
                 ))}
               </div>
+            </section>
+
+            <section>
+              <h2 className={H}>Languages</h2>
+              <div className="space-y-1 text-[11px] text-zinc-500">
+                <p>Khmer — Native</p>
+                <p>Korean — TOPIK Level 3</p>
+                <p>English — Cambridge C1</p>
+              </div>
+            </section>
+
+            <section>
+              <h2 className={H}>Interests</h2>
+              <p className="text-[11px] text-zinc-500">Taekwondo · Billiards · Table tennis</p>
             </section>
 
           </aside>
