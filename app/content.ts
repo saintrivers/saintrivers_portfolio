@@ -15,8 +15,8 @@ export type SectionId = typeof sections[number]['id']
 export const hero = {
   name: 'Dayan Eam',
   title: 'Backend / Full-Stack Engineer',
-  bio: 'Software Engineer focused on backend systems, distributed architectures, and modern web applications.',
-  stack: 'Spring Boot • Kotlin/Java • React • PostgreSQL • Docker • Microservices',
+  bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and cloud-deployed services — comfortable shipping in fast-moving environments and fluent in LLM-based development tools as part of daily workflow.',
+  stack: 'Kotlin • Spring Boot • Kafka • PostgreSQL • WebFlux • Docker',
 }
 
 // ---- About ----
@@ -74,7 +74,7 @@ export const contactInstitutions = [
     src: '/logos/kshrd_logo.png',
     alt: 'Korea Software HRD Center',
     name: 'Korea Software HRD Center',
-    degree: 'Blockchain Engineering and Microservice Architecture',
+    degree: 'Blockchain Engineering & Microservice Architecture',
     link: 'https://www.kshrd.com.kh/',
     container: 'h-12 w-12 rounded-full',
   },
@@ -91,12 +91,11 @@ export const contactInstitutions = [
 // ---- Skills ----
 
 export const skillGroups = [
-  { category: 'Languages', skills: ['Java', 'Kotlin', 'Python', 'TypeScript'] },
-  { category: 'Backend', skills: ['Spring Boot', 'OAuth2', 'PostgreSQL', 'Reactive Systems'] },
-  { category: 'Systems & Messaging', skills: ['Microservices', 'Apache Kafka', 'Solace PubSub+'] },
-  { category: 'Infrastructure', skills: ['Linux', 'Docker', 'API Gateway', 'Service Discovery'] },
-  { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
-  { category: 'ML / Data', skills: ['TensorFlow', 'scikit-learn'] },
+  { category: 'Languages',      skills: ['Kotlin', 'Java', 'Python', 'TypeScript'] },
+  { category: 'Backend',        skills: ['Spring Boot', 'WebFlux', 'r2dbc', 'Kafka', 'OAuth2', 'PostgreSQL'] },
+  { category: 'Infrastructure', skills: ['Docker', 'GCP', 'DigitalOcean', 'Linux', 'API Gateway'] },
+  { category: 'Frontend',       skills: ['React', 'Next.js', 'Angular'] },
+  { category: 'AI & Data',      skills: ['TensorFlow', 'Claude Code', 'ChatGPT', 'Gemini', ] },
 ]
 
 // ---- Research ----
@@ -150,31 +149,10 @@ export const projects: Project[] = [
     type: 'client',
   },
   {
-    name: 'Kafka Full-Stack Template',
-    description: 'Reference architecture for event-driven applications — Angular frontend, Spring Boot services, Kafka messaging, fully containerized with Docker.',
-    tags: ['Angular', 'Spring Boot', 'Kafka', 'Docker'],
-    href: 'https://github.com/saintrivers/kafka_messaging_app',
-    type: 'teaching',
-  },
-  {
-    name: 'REST API with JWT Auth',
-    description: 'Full backend reference implementation with JWT authentication, PostgreSQL integration, and clean layered architecture for students to model and replicate.',
-    tags: ['Kotlin', 'Spring Boot', 'JWT', 'Spring Data JPA', 'PostgreSQL'],
-    href: 'https://github.com/saintrivers/kotlin_springboot_ams',
-    type: 'teaching',
-  },
-  {
-    name: 'Keycloak OAuth2 Deployment',
-    description: 'Full-stack deployment template demonstrating OAuth2/OIDC security with Keycloak — a reproducible reference for engineers learning auth infrastructure.',
-    tags: ['Keycloak', 'OAuth2', 'Spring Boot', 'Docker'],
-    href: 'https://github.com/saintrivers/ultimate-keycloak-guide',
-    type: 'teaching',
-  },
-  {
-    name: 'KONG + Keycloak API Gateway',
-    description: 'API gateway integration template using KONG and Keycloak — covers service routing, and centralized auth enforcement across services.',
-    tags: ['KONG API Gateway', 'Keycloak', 'Spring Boot', 'Docker'],
-    href: 'https://github.com/saintrivers/microservice-template',
+    name: 'Reactive Programming Pipeline',
+    description: 'A server side application for demonstrating the use of a fully reactive tech stack with PostgreSQL integration.',
+    tags: ['Kotlin', 'Spring WebFlux', 'r2dbc', 'PostgreSQL'],
+    href: 'https://github.com/saintrivers/reactive-class-demo',
     type: 'teaching',
   },
   {
@@ -183,5 +161,26 @@ export const projects: Project[] = [
     tags: ['Python', 'Pandas', 'NumPy', 'TensorFlow', 'scikit-learn'],
     href: 'https://github.com/saintrivers/movie_recommendation',
     type: 'class',
+  },
+  {
+    name: 'Kafka Full-Stack Template',
+    description: 'Designed and built an event-driven full-stack reference architecture from scratch. Used as a teaching reference at Korea Software HRD Center.',
+    tags: ['Angular', 'Spring Boot', 'Kafka', 'Docker', 'Event-Driven Architecture'],
+    href: 'https://github.com/saintrivers/kafka_messaging_app',
+    type: 'teaching',
+  },
+  {
+    name: 'KONG + Keycloak API Gateway',
+    description: 'API gateway integration template using KONG and Keycloak — covers service routing, and centralized auth enforcement across services.',
+    tags: ['KONG API Gateway', 'Keycloak', 'OAuth2', 'Spring Boot', 'Docker'],
+    href: 'https://github.com/saintrivers/microservice-template',
+    type: 'teaching',
+  },
+  {
+    name: 'REST API with JWT Auth',
+    description: 'Full backend reference implementation with JWT authentication, PostgreSQL integration, and clean layered architecture for students to model and replicate.',
+    tags: ['Kotlin', 'Spring Boot', 'JWT', 'Spring Data JPA', 'PostgreSQL'],
+    href: 'https://github.com/saintrivers/kotlin_springboot_ams',
+    type: 'teaching',
   },
 ]
