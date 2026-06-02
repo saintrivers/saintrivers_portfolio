@@ -99,13 +99,13 @@ export default function CVKoPage() {
                     name: 'Korea Software HRD Center',
                     link: 'https://www.kshrd.com.kh/',
                     degree: 'Blockchain 공학 및 Microservice 아키텍처',
-                    period: '2023년 4월 – 2024년 2월',
+                    period: '2023년 4월 - 2024년 2월',
                   },
                   {
-                    name: 'Ajou University',
+                    name: '아주대학교 / Ajou University',
                     link: 'https://www.ajou.ac.kr/en/index.do',
                     degree: '컴퓨터공학및보안 석사 (재학 중)',
-                    period: '2024년 9월 – 현재',
+                    period: '2024년 9월 - 현재',
                   },
                 ].map(({ name, link, degree, period }) => (
                   <div key={name}>
@@ -130,7 +130,7 @@ export default function CVKoPage() {
                 {[
                   {
                     title: 'A Deep Learning Approach for Affect Detection: Does Biometric Data Improve Fairness?',
-                    lab: 'AiCONS Lab, Ajou University',
+                    lab: 'AiCONS Lab, Ajou University (아주대학교)',
                     labLink: 'https://sites.google.com/view/iconslab/home',
                     venue: 'IEEE SmartNets2025 — Istanbul, Turkey',
                     doi: '10.1109/SmartNets65254.2025.11106887',
@@ -138,7 +138,7 @@ export default function CVKoPage() {
                   },
                   {
                     title: 'Geometry-Guided Multipath IR-UWB Sensing for In-Cabin Localization and Respiration Monitoring',
-                    lab: 'AiCONS Lab, Ajou University',
+                    lab: 'AiCONS Lab, Ajou University (아주대학교)',
                     labLink: 'https://sites.google.com/view/iconslab/home',
                     status: 'in-preparation' as const,
                   },
