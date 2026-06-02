@@ -19,28 +19,45 @@ export default function CVKoPage() {
         </div>
 
         {/* Header */}
-        <header className="mb-5 pb-3 border-b-2 border-blue-900">
-          <div className="flex items-end justify-between gap-4">
-            <div>
-              <h1 className="text-[28px] font-bold text-blue-900 leading-none tracking-tight">Dayan Eam</h1>
-              <p className="text-sm text-zinc-500 mt-1">소프트웨어 엔지니어</p>
+        <header className="mb-4 pb-3 border-b-2 border-blue-900">
+          <div className="flex items-center justify-between gap-4">
+            {/* Left: portrait + name */}
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/portrait.png"
+                alt="Dayan Eam"
+                className="w-24 h-32 object-cover object-top shrink-0 border-2 border-blue-900"
+              />
+              <div>
+                <h1 className="text-[28px] font-bold text-blue-900 leading-none tracking-tight">Dayan Eam</h1>
+                <p className="text-sm text-zinc-500 mt-1">소프트웨어 엔지니어</p>
+              </div>
             </div>
-          </div>
-          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-[11px] text-zinc-500">
-            <span><span className="font-semibold text-zinc-600">위치:</span> 경기도 수원시, 대한민국</span>
-            <span><span className="font-semibold text-zinc-600">전화:</span> +82 010 2439 8541</span>
-            <a href="https://portfolio.saintrivers.tech" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
-              <span className="font-semibold text-zinc-600">포트폴리오:</span> portfolio.saintrivers.tech
-            </a>
-            <a href="https://github.com/saintrivers" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
-              <span className="font-semibold text-zinc-600">GitHub:</span> github.com/saintrivers
-            </a>
-            <a href="mailto:eam.dayan@gmail.com" className="hover:text-zinc-800">
-              <span className="font-semibold text-zinc-600">이메일:</span> eam.dayan@gmail.com
-            </a>
-            <a href="https://linkedin.com/in/dayan-eam-5249b93b1" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
-              <span className="font-semibold text-zinc-600">LinkedIn:</span> linkedin.com/in/dayan-eam-5249b93b1
-            </a>
+            {/* Right: contact details */}
+            <div className="text-[11px] text-zinc-500 text-right space-y-1">
+              <p><span className="font-semibold text-zinc-600">위치:</span> 경기도 수원시 영통구, 대한민국</p>
+              <p><span className="font-semibold text-zinc-600">전화:</span> 010-2439-8541 </p>
+              <p>
+                <a href="https://portfolio.saintrivers.tech" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
+                  <span className="font-semibold text-zinc-600">포트폴리오:</span> portfolio.saintrivers.tech
+                </a>
+              </p>
+              <p>
+                <a href="https://github.com/saintrivers" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
+                  <span className="font-semibold text-zinc-600">GitHub:</span> github.com/saintrivers
+                </a>
+              </p>
+              <p>
+                <a href="mailto:eam.dayan@gmail.com" className="hover:text-zinc-800">
+                  <span className="font-semibold text-zinc-600">이메일:</span> eam.dayan@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="https://linkedin.com/in/dayan-eam-5249b93b1" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-800">
+                  <span className="font-semibold text-zinc-600">LinkedIn:</span> linkedin.com/in/dayan-eam-5249b93b1
+                </a>
+              </p>
+            </div>
           </div>
         </header>
 
@@ -48,7 +65,7 @@ export default function CVKoPage() {
         <div className="grid grid-cols-5 gap-x-8 print:gap-x-6">
 
           {/* LEFT SIDEBAR */}
-          <aside className="col-span-2 space-y-5">
+          <aside className="col-span-2 space-y-4">
 
             <section>
               <h2 className={H}>기술 스택</h2>
@@ -146,7 +163,7 @@ export default function CVKoPage() {
               <div className="space-y-1 text-[11px] text-zinc-500">
                 <p>크메르어 — 모국어</p>
                 <p>한국어 — TOPIK 3급</p>
-                <p>영어 — Cambridge C1</p>
+                <p>영어 — Cambridge C1 (Advanced)</p>
               </div>
             </section>
 
@@ -158,7 +175,7 @@ export default function CVKoPage() {
           </aside>
 
           {/* RIGHT MAIN */}
-          <main className="col-span-3 space-y-5">
+          <main className="col-span-3 space-y-4">
 
             <p className="text-[12px] leading-relaxed text-zinc-600">
               캄보디아에서 왔으며, 현재 아주대학교 대학원에서 컴퓨터공학을 공부하고 있습니다. 주로 Kotlin과 Java로 Backend 개발을 하며, Python으로 머신러닝도 합니다. 교육 기관에서 강의한 경험이 있어 기술적인 내용을 잘 설명할 수 있습니다. 혼자서도 처음부터 끝까지 개발할 수 있으며, Backend 개발을 중심으로 일할 수 있는 팀에서 함께 하고 싶습니다.
