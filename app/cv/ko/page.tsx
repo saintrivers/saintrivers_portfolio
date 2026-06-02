@@ -13,7 +13,11 @@ export default function CVKoPage() {
         <div className="print:hidden mb-6 flex items-center justify-between">
           <a href="/" className="text-sm text-zinc-400 hover:text-zinc-700 transition-colors">← 뒤로</a>
           <div className="flex items-center gap-4">
-            <a href="/cv" className="text-sm text-zinc-400 hover:text-zinc-700 transition-colors">English</a>
+            <div className="flex items-center gap-1.5 text-sm font-medium">
+              <a href="/cv/en" className="text-zinc-400 hover:text-zinc-700 transition-colors">EN</a>
+              <span className="text-zinc-300">|</span>
+              <span className="text-zinc-800">KO</span>
+            </div>
             <PrintButton />
           </div>
         </div>

@@ -14,7 +14,7 @@ export type SectionId = typeof sections[number]['id']
 
 export const hero = {
   name: 'Dayan Eam',
-  title: 'Backend / Full-Stack Engineer',
+  title: 'Software Engineer',
   bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and cloud-deployed services — comfortable shipping in fast-moving environments and fluent in LLM-based development tools as part of daily workflow.',
   stack: 'Kotlin • Spring Boot • Kafka • PostgreSQL • WebFlux • Docker',
   phone: '+82 010 2439 8541',
