@@ -14,10 +14,10 @@ export type SectionId = typeof sections[number]['id']
 
 export const hero = {
   name: 'Dayan Eam',
-  title: 'Software Engineer',
-  bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and cloud-deployed services — comfortable shipping in fast-moving environments and fluent in LLM-based development tools as part of daily workflow.',
+  title: 'Back End Engineer',
+  bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and scalable deployments — capable of delivering web applications end-to-end, from frontend UI to backend services and production infrastructure.',
   stack: 'Kotlin • Spring Boot • Kafka • PostgreSQL • WebFlux • Docker',
-  phone: '+82 010 2439 8541',
+  phone: '+82-010-2439-8541',
   location: 'Suwon, Gyeonggi, Republic of Korea',
 }
 
@@ -87,7 +87,7 @@ export const contactInstitutions = [
     alt: 'Ajou University',
     name: 'Ajou University',
     degree: 'M.S. in Computer Engineering and Security (In Progress)',
-    period: 'Sep 2024 – Present',
+    period: 'Sep 2024 - Aug 2026',
     link: 'https://www.ajou.ac.kr/en/index.do',
     container: 'h-12 w-12 rounded-full bg-white', // transparent logo needs light bg
   },
@@ -108,7 +108,7 @@ export const workExperience: WorkExperience[] = [
     title: 'Graduate Researcher',
     company: 'AiCONS Lab, Ajou University',
     location: 'Suwon, Gyeonggi, Republic of Korea',
-    period: 'Sep 2024 – Present',
+    period: 'Sep 2024 - Aug 2026',
     bullets: [
       'Published paper at IEEE SmartNets2025 on affect detection fairness using biometric data.',
       'Researched IR-UWB radar for in-cabin vital sign monitoring with AI and signal processing.',
@@ -148,11 +148,11 @@ export const workExperience: WorkExperience[] = [
 // ---- Skills ----
 
 export const skillGroups = [
-  { category: 'Languages', skills: ['Kotlin', 'Java', 'Python', 'TypeScript'] },
-  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'r2dbc', 'Kafka', 'OAuth2', 'PostgreSQL'] },
-  { category: 'Infrastructure', skills: ['Docker', 'GCP', 'DigitalOcean', 'Linux', 'API Gateway'] },
+  { category: 'Languages', skills: ['Kotlin', 'Java', 'Python', 'TypeScript', 'JavaScript'] },
+  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'Kafka', 'OAuth2', 'PostgreSQL'] },
+  { category: 'Infrastructure', skills: ['Docker', 'GCP', 'Linux', 'Microservices'] },
   { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
-  { category: 'AI & Data', skills: ['TensorFlow', 'Claude Code', 'ChatGPT', 'Gemini',] },
+  { category: 'AI & Data', skills: ['TensorFlow'] },
 ]
 
 // ---- Research ----

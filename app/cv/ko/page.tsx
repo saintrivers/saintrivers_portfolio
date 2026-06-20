@@ -34,7 +34,7 @@ export default function CVKoPage() {
               />
               <div>
                 <h1 className="text-[28px] font-bold text-blue-900 leading-none tracking-tight">Dayan Eam</h1>
-                <p className="text-sm text-zinc-500 mt-1">소프트웨어 엔지니어</p>
+                <p className="text-sm text-zinc-500 mt-1">백엔드 엔지니어</p>
               </div>
             </div>
             {/* Right: contact details */}
@@ -75,11 +75,11 @@ export default function CVKoPage() {
               <h2 className={H}>기술 스택</h2>
               <div className="space-y-2">
                 {[
-                  { category: '프로그래밍 언어', skills: ['Kotlin', 'Java', 'Python', 'TypeScript'] },
-                  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'r2dbc', 'Kafka', 'OAuth2', 'PostgreSQL'] },
-                  { category: '인프라', skills: ['Docker', 'GCP', 'DigitalOcean', 'Linux', 'API Gateway'] },
+                  { category: '프로그래밍 언어', skills: ['Kotlin', 'Java', 'Python', 'TypeScript', 'JavaScript'] },
+                  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'Kafka', 'OAuth2', 'PostgreSQL'] },
+                  { category: '인프라', skills: ['Docker', 'GCP', 'Linux', 'Microservices'] },
                   { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
-                  { category: 'AI & 데이터', skills: ['TensorFlow', 'Claude Code', 'ChatGPT', 'Gemini'] },
+                  { category: 'AI & 데이터', skills: ['TensorFlow'] },
                 ].map(({ category, skills }) => (
                   <div key={category} className="text-[11px]">
                     <span className="font-semibold text-zinc-700">{category}: </span>
@@ -109,7 +109,7 @@ export default function CVKoPage() {
                     name: '아주대학교 / Ajou University',
                     link: 'https://www.ajou.ac.kr/en/index.do',
                     degree: '컴퓨터공학및보안 석사 (재학 중)',
-                    period: '2024년 9월 - 현재',
+                    period: '2024년 9월 - 2026년 8월',
                   },
                 ].map(({ name, link, degree, period }) => (
                   <div key={name}>
@@ -182,7 +182,7 @@ export default function CVKoPage() {
           <main className="col-span-3 space-y-4">
 
             <p className="text-[12px] leading-relaxed text-zinc-600">
-              캄보디아에서 왔으며, 현재 아주대학교 대학원에서 컴퓨터공학을 공부하고 있습니다. 주로 Kotlin과 Java로 Backend 개발을 하며, Python으로 머신러닝도 합니다. 교육 기관에서 강의한 경험이 있어 기술적인 내용을 잘 설명할 수 있습니다. 혼자서도 처음부터 끝까지 개발할 수 있으며, Backend 개발을 중심으로 일할 수 있는 팀에서 함께 하고 싶습니다.
+              이벤트 기반 시스템, 리액티브 프로그래밍, 확장 가능한 배포 환경에 실무 경험이 있는 백엔드 엔지니어입니다. 프론트엔드 UI부터 백엔드 서비스, 프로덕션 인프라까지 웹 애플리케이션을 end-to-end로 독립적으로 개발하고 배포할 수 있습니다.
             </p>
 
             <section>
@@ -193,7 +193,7 @@ export default function CVKoPage() {
                     title: '대학원 연구원',
                     company: 'AiCONS Lab, Ajou University',
                     location: '경기도 수원시 영통구 대한민국',
-                    period: '2024년 9월 - 현재',
+                    period: '2024년 9월 - 2026년 8월',
                     bullets: [
                       'Published paper at IEEE SmartNets2025 on affect detection fairness using biometric data.',
                       'Researched IR-UWB radar for in-cabin vital sign monitoring with AI and signal processing.',
