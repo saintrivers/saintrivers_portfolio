@@ -149,7 +149,7 @@ export const workExperience: WorkExperience[] = [
 
 export const skillGroups = [
   { category: 'Languages', skills: ['Kotlin', 'Java', 'Python', 'TypeScript', 'JavaScript'] },
-  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'Kafka', 'OAuth2', 'PostgreSQL'] },
+  { category: 'Backend', skills: ['Spring Boot', 'WebFlux', 'Kafka', 'Solace PubSub+', 'OAuth2', 'PostgreSQL'] },
   { category: 'Infrastructure', skills: ['Docker', 'GCP', 'Linux', 'Microservices'] },
   { category: 'Frontend', skills: ['React', 'Next.js', 'Angular'] },
   { category: 'AI & Data', skills: ['TensorFlow'] },
