@@ -14,8 +14,8 @@ export type SectionId = typeof sections[number]['id']
 
 export const hero = {
   name: 'Dayan Eam',
-  title: 'Back End Engineer',
-  bio: 'Backend engineer with hands-on experience in event-driven systems, reactive programming, and scalable deployments — capable of delivering web applications end-to-end, from frontend UI to backend services and production infrastructure.',
+  title: 'Full-Stack Software Developer',
+  bio: 'Full-stack engineer with hands-on experience in event-driven systems, reactive programming, and scalable deployments — capable of delivering web applications end-to-end, from frontend UI to backend services and production infrastructure.',
   stack: 'Kotlin • Spring Boot • Kafka • PostgreSQL • WebFlux • Docker',
   phone: '+82-010-2439-8541',
   location: 'Suwon, Gyeonggi, Republic of Korea',
@@ -69,7 +69,7 @@ export const contactInstitutions = [
     alt: 'Royal University of Phnom Penh',
     name: 'Royal University of Phnom Penh',
     degree: 'B.S. in Computer Science and Engineering',
-    period: 'Nov 2018 – Sep 2022',
+    period: 'Nov 2018 - Sep 2022',
     link: 'https://www.rupp.edu.kh/',
     container: 'h-12 w-12 rounded-full',
   },
@@ -77,8 +77,8 @@ export const contactInstitutions = [
     src: '/logos/kshrd_logo.png',
     alt: 'Korea Software HRD Center',
     name: 'Korea Software HRD Center',
-    degree: 'Blockchain Engineering & Microservice Architecture',
-    period: 'Apr 2023 – Feb 2024',
+    degree: 'Short Courses on Web Development and Microservices',
+    period: 'Apr 2023 - Feb 2024',
     link: 'https://www.kshrd.com.kh/',
     container: 'h-12 w-12 rounded-full',
   },
@@ -177,12 +177,12 @@ export const publications: Publication[] = [
     doi: '10.1109/SmartNets65254.2025.11106887',
     status: 'published',
   },
-  {
-    title: 'Geometry-Guided Multipath IR-UWB Sensing for In-Cabin Localization and Respiration Monitoring',
-    lab: 'AiCONS Lab, Ajou University',
-    labLink: 'https://sites.google.com/view/iconslab/home',
-    status: 'in-preparation',
-  },
+  // {
+  //   title: 'Geometry-Guided Multipath IR-UWB Sensing for In-Cabin Localization and Respiration Monitoring',
+  //   lab: 'AiCONS Lab, Ajou University',
+  //   labLink: 'https://sites.google.com/view/iconslab/home',
+  //   status: 'in-preparation',
+  // },
 ]
 
 // ---- Work ----
